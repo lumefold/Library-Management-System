@@ -12,13 +12,15 @@ The **Library Management System** models a real-world library infrastructure con
 * **Data Integrity Protection:** Enforces input validation across all resource mutators (setters).
 * **Heterogeneous Inventory Management:** Manages multiple asset variants inside a unified, dynamic collection.
 * **Type-Specific Formatting:** Dynamically renders distinct outputs for different item types at execution time.
+* **Interactive CLI (V5.0):** User-friendly menu for real-time inventory management (Search, Add, Checkout, Return).
 
 ---
 
 ##  Project Directory Structure
 
 ```text
-├── Main.java           # Application entry point & presentation driver
+├── Main.java           # Interactive CLI & presentation driver
+├── Library.java        # Inventory management logic (Search, CRUD)
 ├── LibraryItem.java    # Abstract superclass (Core Blueprint & Encapsulation)
 ├── Book.java           # Subclass extending LibraryItem (Overloading & Overriding)
 └── Magazine.java       # Subclass extending LibraryItem (Overriding)
